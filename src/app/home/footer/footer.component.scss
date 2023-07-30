@@ -1,0 +1,16 @@
+.main-container {
+    text-align: center;
+    padding: 15px 0;
+    background-color: black;
+
+    .block {
+        display: inline-block;
+        margin: 5px 15px;
+        color: white;
+
+        &:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    }
+}

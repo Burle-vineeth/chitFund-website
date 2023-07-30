@@ -1,0 +1,30 @@
+<div class="main-container">
+    <h1 class="heading">{{ chitItemDetails?.name }}</h1>
+    <div class="block">
+        <div class="block-info row">
+            <div class="instance col-6">
+                Number of participants :- {{ chitItemDetails?.members }}
+            </div>
+            <div class="instance col-6">
+                <div class="commission">
+                    Commission Rate :- {{ chitItemDetails?.commission }}%
+                </div>
+                <div class="commission">
+                    Commission Amount :- {{ commissionAmount | currency:'INR'}}
+            </div>
+            </div>
+        </div>
+        <div class="major-info row">
+            <div class="mini-blocks col-6">
+                <img src="../../../assets/images/money.pn" alt="">
+            </div>
+            <div class="mini-blocks col-6">
+                <div class="circle">
+                    <button mat-raised-button color="primary" (click)="createChit()">
+                        Create Chit
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

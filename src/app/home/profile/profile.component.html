@@ -1,0 +1,45 @@
+<div class="main-container">
+    <div class="block headsec">
+        <div class="sub-block myprof">
+            My Profile
+        </div>
+        <div class="sub-block right">
+            <button mat-raised-button color="primary">
+                <mat-icon>
+                    edit
+                </mat-icon>
+                Edit Profile
+            </button>
+        </div>
+    </div>
+    <div class="block bot row">
+        <div class="sub-block col-7 tit">
+            <div class="title">
+                <mat-icon title="Profile">
+                    account_circle
+                </mat-icon>&nbsp;
+                <span>
+                    Profile Information
+                </span>
+            </div>
+            <div class="title-body">
+                <div class="info">
+                    Name : 
+                </div>
+                <div class="info">
+                    <mat-icon title="Email">
+                        email
+                    </mat-icon>
+                    <span>
+                        User Email :
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="sub-block col-5">
+            <div class="mini-block">
+                <img src="../../../assets/images/user-profile" alt="" title="Change Profile" (click)="changeProfile()">
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,13 @@
+<div class="main-container row">
+    <div *ngFor="let item of chitItems" class="blocks col-4" (click)="chitCreate(item.id)">
+        <div class="block">
+            <h1>&#8377;&nbsp;{{item.name}}</h1>
+            <p>
+                Commission Rate: {{item.commission}}%
+            </p>
+            <p>
+                Number of Participants: {{item.members}}
+            </p>
+        </div>
+    </div>
+</div>

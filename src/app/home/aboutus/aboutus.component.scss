@@ -1,0 +1,23 @@
+.main-container {
+    padding: 20px 45px;
+
+    .title {
+        font-weight: bold;
+        font-size: 35px;
+        line-height: 40px;
+    }
+
+    .body {
+        padding: 15px 30px;
+
+        .head {
+            font-weight: bold;
+            font-size: 27px;
+            line-height: 32px;
+        }
+
+        .block {
+            margin: 15px 0;
+        }
+    }
+}

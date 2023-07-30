@@ -1,0 +1,36 @@
+<div class="sup-container">
+    <div class="main-container" style="border: none;">
+        <img src="../../../assets/images/download.png" alt="">
+    </div>
+    <div class="main-container">
+        <div class="two">
+        <h1 class="login-h1">Login Page</h1>
+        <form [formGroup]="loginForm" (ngSubmit)="login()">
+            <mat-form-field appearance="outline">
+                <mat-label>Email</mat-label>
+                <input formControlName="email" matInput placeholder="admin@gmail.com">
+                <mat-error *ngIf="loginForm.controls['email'].hasError('required')">email should be provided</mat-error>
+                <mat-error *ngIf="loginForm.controls['email'].hasError('email')">Not a valid Email</mat-error>
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+                <mat-label>Password</mat-label>
+                <input formControlName="password" matInput placeholder="atleast 6 characters">
+                <mat-error>
+                    password should be atleast 6 characters
+                </mat-error>
+            </mat-form-field>
+            <div class="button">
+                <button type="submit" mat-raised-button color="primary">
+                    Login
+                </button>
+            </div>
+            <hr>
+            <div class="button">
+                Don't have an account?
+                <button (click)="registerPage()" type="button" class="signup-button">Register</button>
+                <span *ngIf="forgotPassword" class="text-danger">/</span>
+                <button *ngIf="forgotPassword" (click)="forgotPasswordPage()" type="button" class="signup-button">Forgot Password</button>
+            </div>
+        </form></div>
+    </div>
+</div>

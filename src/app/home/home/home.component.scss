@@ -1,0 +1,28 @@
+.main-container {
+    overflow-x: hidden;
+    padding: 0 10px;
+
+    .blocks {
+        min-height: 150px;
+        padding: 15px;
+        cursor: pointer;
+
+        .block {
+            height: 100%;
+            text-align: center;
+            padding: 5px;
+            border-radius: 5px;
+            border: 1px solid rgb(199, 197, 197);
+            box-shadow: 0 0 5px gray;
+
+            &:hover {
+                border: 1px solid goldenrod;
+                box-shadow: 0 0 15px goldenrod;
+            }
+
+            h1 {
+                text-transform: capitalize;
+            }
+        }
+    }
+}

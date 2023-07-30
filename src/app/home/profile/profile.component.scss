@@ -1,0 +1,85 @@
+.main-container {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+
+    .headsec {
+        margin-bottom: 5px;
+        display: flex;
+
+        .myprof {
+            font-size: large;
+            margin-top: 5px;
+        }
+
+        .right {
+            margin-left: auto;
+        }
+    }
+
+    .block {
+        padding: 20px;
+        border: 1px solid rgb(233, 231, 231);
+        border-radius: 5px;
+        box-shadow: 0 0 3px gray;
+
+        .sub-block {
+            .title {
+                position: relative;
+                margin: 10px 0;
+
+                mat-icon {
+                    position: relative;
+                    top: 3px;
+
+                }
+
+                span {
+                    font-size: 22px;
+                }
+            }
+
+            .title-body {
+                margin: 10px 0;
+
+                .info {
+                    margin: 5px 0;
+                    font-size: 18px;
+                    position: relative;
+
+                    mat-icon {
+                        position: relative;
+                        top: 5px;
+                    }
+                }
+            }
+
+            .mini-block {
+                text-align: right;
+
+                img {
+                    max-width: 260px;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .tit {
+            padding-top: 50px;
+        }
+    }
+
+    .bot {
+        min-height: 69vh;
+        margin: 0px;
+    }
+}
+
+mat-icon {
+    cursor: pointer;
+
+    &:hover {
+        color: rgb(255, 136, 0);
+    }
+}

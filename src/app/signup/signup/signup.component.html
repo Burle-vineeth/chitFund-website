@@ -1,0 +1,41 @@
+<div class="sup-container">
+    <div class="main-container">
+        <form [formGroup]="signupForm" (ngSubmit)="signup()">
+            <mat-form-field appearance="outline">
+                <mat-label>User Name</mat-label>
+                <input formControlName="name" matInput placeholder="Ex:- Vineeth">
+                <mat-error>Name Should be provided</mat-error>
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+                <mat-label>Email</mat-label>
+                <input formControlName="email" matInput placeholder="admin@gmail.com">
+                <mat-error *ngIf="signupForm.controls['email'].hasError('required')">email should be provided</mat-error>
+                <mat-error *ngIf="signupForm.controls['email'].hasError('email')">Not a valid Email</mat-error>
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+                <mat-label>Password</mat-label>
+                <input formControlName="password" matInput placeholder="atleast 6 characters">
+                <mat-error>
+                    password should be atleast 6 characters
+                </mat-error>
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+                <mat-label>Confirm Password</mat-label>
+                <input #cpassword matInput placeholder="re-enter the password">
+            </mat-form-field>
+            <mat-checkbox class="example-margin" formControlName="terms">Accept the terms and conditions</mat-checkbox>
+            <div class="button">
+                <button type="submit" mat-raised-button color="primary">
+                    Register
+                </button>
+            </div>
+            <hr>
+            <div class="button">
+                Already have an account? &nbsp;&nbsp;<button (click)="login()" class="btn" type="button" mat-raised-button>Login</button>
+            </div>
+        </form>
+    </div>
+    <div class="main-container" style="border: none;">
+        <img src="../../../assets/images/png-transparent-anime-game-icon-anime-female-warrior-painted-hand-cartoon.png" alt="">
+    </div>
+</div>

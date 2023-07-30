@@ -1,0 +1,47 @@
+.sup-container {
+    display: flex;
+    align-content: center;
+    height: 100vh;
+
+    .login-h1 {
+        text-align: center;
+        color: blue;
+    }
+
+    .main-container {
+        margin: auto;
+        width: 500px;
+        padding: 15px;
+        border-radius: 5px;
+        border: 1px solid gray;
+
+        img {
+            width: 100%;
+        }
+
+        form {
+            mat-form-field {
+                width: 100%;
+            }
+
+            .button {
+                margin: auto;
+                width: fit-content;
+
+                .signup-button {
+                    border: none;
+                    outline: none;
+                    background-color: white;
+
+                    &:hover {
+                        color: blue;
+                    }
+                }
+            }
+
+            p {
+                text-align: center;
+            }
+        }
+    }
+}
